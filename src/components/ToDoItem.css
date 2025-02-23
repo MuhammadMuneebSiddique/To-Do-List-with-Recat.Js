@@ -1,0 +1,39 @@
+
+.to-do-item{
+    width: 35rem;
+    background-color: #15101C;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.com-del-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2.3rem;
+}
+
+:hover.complete{
+    color: #007B0B;
+}
+
+:hover.delete{
+    color: #F00817;
+}
+
+.tasks{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.complete-tasks{
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: line-through;
+    color: #78CFB0;
+}

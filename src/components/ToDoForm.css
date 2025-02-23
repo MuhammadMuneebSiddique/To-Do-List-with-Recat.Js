@@ -1,0 +1,22 @@
+.to-do-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.input-field{
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.7rem 0.6rem;
+    background-color: #1D1825;
+    border: 0.1rem solid #9E78CF;
+    color: #9E78CF;
+    width: 25rem;
+}
+
+.add-task{
+    font-size: 4rem;
+    background-color: #9E78CF;
+    border-radius: 1em;
+}
