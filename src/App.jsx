@@ -65,9 +65,9 @@ const App = () => {
       <div>
         <h2>to do tasks</h2>
         <div className='to-do-task-container'>
-          {task.map((curElem)=>{
+          {task.map((curElem,index)=>{
             if(!curElem.checked){
-              return <TodoItem data={curElem} handleTaskDelete={handleTaskDelete} handleIsTaskComplete={handleIsTaskComplete} />
+              return <TodoItem key={index} data={curElem} handleTaskDelete={handleTaskDelete} handleIsTaskComplete={handleIsTaskComplete} />
             }
           })}
         </div>
@@ -79,8 +79,8 @@ const App = () => {
       <div>
         <h2>Done</h2>
         <div className='to-do-task-container'>
-          {task.map((curElem)=>{
-            if(curElem.checked){ return <ToDoCompleteItem data={curElem}/> }
+          {task.map((curElem , index)=>{
+            if(curElem.checked){ return <ToDoCompleteItem key={index} data={curElem}/> }
           })}
         </div>
       </div>
