@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ToDoitem.css"
+import "./ToDoItem.css"
 import { MdDone , MdDeleteOutline } from "react-icons/md";
 
 export const TodoItem = ({data , handleIsTaskComplete , handleTaskDelete }) => {
