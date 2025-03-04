@@ -1,12 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ToDoCompleteItem, TodoItem } from './components/ToDoItem'
 import { ToDoForm } from './components/ToDoForm'
 import "./App.css"
 
 const App = () => {
 
-  const [inputValue , setinputValue] = useState({})
-  const [task , setTask] = useState([])
+  const [inputValue , setinputValue] = useState({})  
+  const [task , setTask] = useState(() => {
+    const getDataInLocalStorage = JSON.parse(localStorage.getItem("to-do-item"))
+    if(getDataInLocalStorage){
+      return getDataInLocalStorage
+    }
+    return []
+  })
 
   // get input value from Input Form and set input value in state
   const handleInputValue = (value) => {
@@ -53,6 +59,10 @@ const App = () => {
     const updatedData = task.filter((curElem)=>curElem.id !== data.id)
     return setTask(updatedData)
   }
+
+   useEffect(()=>{
+    localStorage.setItem("to-do-item",JSON.stringify(task))
+  } , [task])
 
   return (
     <>
