@@ -59,7 +59,11 @@ const App = () => {
     const updatedData = task.filter((curElem)=>curElem.id !== data.id)
     return setTask(updatedData)
   }
-
+  
+  const handleClearTask = () => {
+    setTask([])
+  }
+  
    useEffect(()=>{
     localStorage.setItem("to-do-item",JSON.stringify(task))
   } , [task])
@@ -95,6 +99,9 @@ const App = () => {
         </div>
       </div>
       : <></> }
+    </div>
+    <div>
+      <button className='clear-task' onClick={handleClearTask} >clear task</button>
     </div>
     </>
   )
