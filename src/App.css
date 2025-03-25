@@ -42,6 +42,7 @@ h1{
     font-size: 2rem;
     margin: 0rem auto;
     text-transform: capitilize;
+    border: none;
 }
 
 :hover.clear-task{
