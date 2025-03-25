@@ -33,3 +33,15 @@ h1{
     align-items: center;
     gap: 1rem;
 }
+
+.clear-task{
+    background-color: #1D1825;
+    padding: 0.8rem 3rem;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+:hover .clear-task{
+    color: #F00817;
+
+}
