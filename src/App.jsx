@@ -100,7 +100,7 @@ const App = () => {
       </div>
       : <></> }
     </div>
-    <div>
+    <div className='clear-task-container'>
       <button className='clear-task' onClick={handleClearTask} >clear task</button>
     </div>
     </>
