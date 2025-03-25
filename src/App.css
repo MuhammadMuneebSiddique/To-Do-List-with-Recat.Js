@@ -41,9 +41,9 @@ h1{
     border-radius: 1rem;
     font-size: 2rem;
     margin: 0rem auto;
+    text-transform: capitilize;
 }
 
-:hover .clear-task{
+:hover.clear-task{
     color: #F00817;
-
 }
