@@ -34,6 +34,12 @@ h1{
     gap: 1rem;
 }
 
+.clear-task-container{
+    display: flex;
+    justify-content: center;
+    align-item: center;
+}
+
 .clear-task{
     background-color: #1D1825;
     padding: 1rem 3rem;
