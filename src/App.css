@@ -36,12 +36,12 @@ h1{
 
 .clear-task{
     background-color: #1D1825;
-    padding: 0.8rem 3rem;
+    padding: 1rem 3rem;
     color: #fff;
     border-radius: 1rem;
     font-size: 2rem;
     margin: 0rem auto;
-    text-transform: capitilize;
+    text-transform: capitalize;
     border: none;
 }
 
